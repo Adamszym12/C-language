@@ -8,6 +8,12 @@ main(){
 			tab[c-'0']++;
 		}
 	}
+	/* Build base of histogram **/
+	printf("\n");
+	for(int i = 48; i < 127; i++){
+		printf("%c", (i));
+	}
+
 	/* Build histogram **/
 	printf("\n");
 	while(empty == 0){
@@ -24,10 +30,5 @@ main(){
 		}
 		printf("\n");
 	}
-	/* Build base of histogram **/
-	for(int i = 48; i < 127; i++){
-		printf("%c", (i));
-	}
-	printf("\n");
 	return 0;
 }
